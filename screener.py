@@ -27,7 +27,7 @@ When a stock is labeled as "premarket most active," it means that it has seen a 
 ''')
 mostactive=Scanner.premarket_most_active.get_data()
 st.table(mostactive.head(10))
-fig3=px.bar(mostactive,x='name',y='premarket_volume',title='<h2>premarket Gainers premarket volume</h2>')
+fig3=px.bar(mostactive,x='name',y='premarket_volume',title='premarket Gainers premarket volume')
 fig4=px.line(mostactive,x='name',y='close',title='Closing price of the company by pre market gainers')
 st.plotly_chart(fig3,use_container_width=True)
 st.plotly_chart(fig4,use_container_width=True)

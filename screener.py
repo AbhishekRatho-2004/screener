@@ -5,7 +5,7 @@ from IPython.display import display,clear_output
 import time as t
 import plotly.graph_objects as go
 import plotly.express as px
-st.set_page_config(title='Screener',layout='wide')
+st.set_page_config(page_title='Screener',layout='wide')
 st.header('Stock Screener')
 st.subheader(':blue[PreMarket Gainer]')
 st.write('''
